@@ -1,6 +1,5 @@
 package org.example;
 
-import junit.framework.TestCase;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -14,11 +13,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 /**
  * Unit test for simple App.
  */
-public class AppTest
-        extends TestCase {
+public class AppTest {
     @Test
     public void testApp() {
 
