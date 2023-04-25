@@ -62,7 +62,7 @@ public class RelativeLocatorsTest {
 
         List<ZipInfo> zipInfos = new ArrayList<>();
 
-        zipTableLinks.stream().forEach(link -> {
+        zipTableLinks.forEach(link -> {
             driver.navigate().to(link);
             zipInfos.add(new ZipInfo(findZipDataByLabel("City"), findZipDataByLabel("State"), findZipDataByLabel("Zip Code"), findZipDataByLabel("Longitude"), findZipDataByLabel("Latitude")));
             driver.navigate().back();

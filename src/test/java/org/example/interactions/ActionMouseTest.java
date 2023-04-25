@@ -29,8 +29,6 @@ public class ActionMouseTest {
     private static final String HOVERABLE_ELEMENT = "#hover";
     private static final String HOVER_STATUS = "#move-status";
 
-    private WebElement textField;
-
 
     @BeforeEach
     void setUp() {

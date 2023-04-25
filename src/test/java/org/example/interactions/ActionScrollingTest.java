@@ -45,10 +45,11 @@ public class ActionScrollingTest {
     private boolean inViewport(WebElement element) {
 
         String script =
-                "for(var e=arguments[0],f=e.offsetTop,t=e.offsetLeft,o=e.offsetWidth,n=e.offsetHeight;\n"
-                        + "e.offsetParent;)f+=(e=e.offsetParent).offsetTop,t+=e.offsetLeft;\n"
-                        + "return f<window.pageYOffset+window.innerHeight&&t<window.pageXOffset+window.innerWidth&&f+n>\n"
-                        + "window.pageYOffset&&t+o>window.pageXOffset";
+                """
+                        for(var e=arguments[0],f=e.offsetTop,t=e.offsetLeft,o=e.offsetWidth,n=e.offsetHeight;
+                        e.offsetParent;)f+=(e=e.offsetParent).offsetTop,t+=e.offsetLeft;
+                        return f<window.pageYOffset+window.innerHeight&&t<window.pageXOffset+window.innerWidth&&f+n>
+                        window.pageYOffset&&t+o>window.pageXOffset""";
 
         return (boolean) ((RemoteWebDriver) driver).executeScript(script, element);
     }
