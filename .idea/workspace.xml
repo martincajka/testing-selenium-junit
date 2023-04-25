@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edac16fc-119c-433c-9513-8ae38a29ce30" name="Changes" comment="fixed references on old junit API">
+    <list default="true" id="edac16fc-119c-433c-9513-8ae38a29ce30" name="Changes" comment="updated version of Selenium, removed App.class">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/cdp/InitializationScriptTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/relativelocators/RelativeLocatorsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/relativelocators/ZipInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/WindowsAndTabsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/WindowsAndTabsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ActionKeysTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/interactions/ActionKeysTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ActionMouseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/interactions/ActionMouseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ActionScrollingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/interactions/ActionScrollingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/BrowserNavigationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/interactions/BrowserNavigationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/FramesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/interactions/FramesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/JSNativePopupMessagesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/interactions/JSNativePopupMessagesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/WindowsAndTabsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/interactions/WindowsAndTabsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +47,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true"
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/marti/repos/testing-selenium-junit-ui/src/test/java/org/example"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -48,34 +56,18 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WindowsAndTabsTest">
+  <component name="RunManager" selected="JUnit.Demo.test">
     <configuration name="ActionMouseTest.backClickTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testing-selenium-junit-ui" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.interactions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.ActionMouseTest" />
+      <option name="PACKAGE_NAME" value="org.example.interactions" />
+      <option name="MAIN_CLASS_NAME" value="org.example.interactions.ActionMouseTest" />
       <option name="METHOD_NAME" value="backClickTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ActionMouseTest.dragAndDropTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="testing-selenium-junit-ui" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.ActionMouseTest" />
-      <option name="METHOD_NAME" value="dragAndDropTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -85,13 +77,29 @@
       <module name="testing-selenium-junit-ui" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.interactions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.interactions" />
+      <option name="MAIN_CLASS_NAME" value="org.example.interactions.ActionScrollingTest" />
+      <option name="METHOD_NAME" value="scrollToElementTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testing-selenium-junit-ui" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.interactions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.ActionScrollingTest" />
-      <option name="METHOD_NAME" value="scrollToElementTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Demo" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,12 +109,12 @@
       <module name="testing-selenium-junit-ui" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.interactions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.WindowsAndTabsTest" />
+      <option name="PACKAGE_NAME" value="org.example.interactions" />
+      <option name="MAIN_CLASS_NAME" value="org.example.interactions.WindowsAndTabsTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -116,12 +124,12 @@
       <module name="testing-selenium-junit-ui" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.interactions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.WindowsAndTabsTest" />
+      <option name="PACKAGE_NAME" value="org.example.interactions" />
+      <option name="MAIN_CLASS_NAME" value="org.example.interactions.WindowsAndTabsTest" />
       <option name="METHOD_NAME" value="openAndCloseNewTabTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -130,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Demo.test" />
         <item itemvalue="JUnit.WindowsAndTabsTest" />
         <item itemvalue="JUnit.WindowsAndTabsTest.openAndCloseNewTabTest" />
         <item itemvalue="JUnit.ActionScrollingTest.scrollToElementTest" />
         <item itemvalue="JUnit.ActionMouseTest.backClickTest" />
-        <item itemvalue="JUnit.ActionMouseTest.dragAndDropTest" />
       </list>
     </recent_temporary>
   </component>
@@ -168,13 +176,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672677034018</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="updated version of Selenium, removed App.class">
+      <created>1682262652048</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682262652048</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding first tests" />
     <MESSAGE value="removed old junit dependency" />
     <MESSAGE value="fixed references on old junit API" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed references on old junit API" />
+    <MESSAGE value="updated version of Selenium, removed App.class" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated version of Selenium, removed App.class" />
   </component>
 </project>
